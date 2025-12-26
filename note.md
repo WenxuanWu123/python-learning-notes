@@ -2,17 +2,9 @@
 笔记和测试代码印上传到了github，连接：https://github.com/WenxuanWu123/python-learning-notes.git
 强制推送方法：
 ```
-1. # 进入你的项目目录
-cd "d:\coding-personal\python learning"
-
-# 强制添加所有文件（包括已修改的）
-git add -A
-
-# 强制提交（覆盖历史记录）
-git commit -m "更新学习笔记和代码"
-
-# 强制推送到 GitHub（覆盖远程内容）
-git push -f origin main
+1. 执行upload.bat文件，在Powershell中输入:
+cd "python learning"
+.\upload.bat
 2. 直接在终端里边输入：cd "d:\coding-personal\python learning"; if(!(Test-Path .git)){git init *>$null; git remote add origin https://github.com/WenxuanWu123/python-learning-notes.git *>$null}; git add -A *>$null; git commit -m "更新内容" *>$null; git push -f origin main *>$null
 ```
 **12\26**
