@@ -3,9 +3,8 @@
 强制推送方法：
 ```
 1. 执行upload.bat文件，在Powershell中输入:
-cd "python learning"
-.\upload.bat
-2. 直接在终端里边输入：cd "d:\coding-personal\python learning"; if(!(Test-Path .git)){git init *>$null; git remote add origin https://github.com/WenxuanWu123/python-learning-notes.git *>$null}; git add -A *>$null; git commit -m "更新内容" *>$null; git push -f origin main *>$null
+cd "python learning"; .\upload.bat
+2. 直接在终端里边输入：cd "d:\coding-personal\python learning"; if(!(Test-Path .git)){git init *>$null; git remote add origin https://github.com/WenxuanWu123/python-learning-notes.git *>$null}; git add -A *>$null; git commit -m "更新内容" --allow-empty *>$null; git push -f origin main *>$null; Write-Host "上传完成！"
 ```
 **12\26**
 ## 用markdown格式写作
