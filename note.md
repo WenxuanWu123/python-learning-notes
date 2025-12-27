@@ -15,8 +15,6 @@ line1
 line2
 ```
 来表示python代码块。
-
-
 ## 学python
 参考网址：[Python 学习笔记](https://www.liaoxuefeng.com/wiki/1016959663602400)。
 ### 数据类型与变量
@@ -42,9 +40,11 @@ line3 ''')
 print(r'''hello,\n
 world''')
 ```
-
-布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，在Python中，可以直接用True、False表示布尔值（请注意大小写），也可以通过布尔运算计算出来：
-```python
+---
+**12/27**
+### 布尔值
+布尔值是Python中最基本的数据类型之一，它只有两个值：True和False。布尔值通常用于表示逻辑判断的结果，例如判断一个数是否大于另一个数、一个字符串是否为空等。
+```
 >>> True
 True
 >>> False
@@ -54,6 +54,51 @@ True
 >>> 3 > 5
 False
 ```
+布尔值可以用and、or和not运算。
+
+**and运算**是与运算，只有所有都为True，and运算结果才是True：
+```python
+>>> True and True
+True
+>>> True and False
+False
+>>> False and False
+False
+```
+**or运算**是或运算，只要有一个为True，or运算结果就是True：
+```python
+>>> True or True
+True
+>>> True or False
+True
+>>> False or False
+False
+```
+**not运算**是非运算，它是一个单目运算符，把True变成False，False变成True：
+```python
+>>> not True
+False
+>>> not False
+True
+```
+布尔值经常用在条件判断中，比如：
+```
+if age >= 18:
+    print('adult')
+else:
+    print('teenager')
+```
+### 空值
+空值是Python中表示不存在或无值的特殊值，通常用None表示。None是一个特殊的对象，它的类型是NoneType。
+### 变量
+变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。
+变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和_的组合，且不能用数字开头，比如：
+a = 1
+变量a是一个整数。
+t_007 = 'T007'
+变量t_007是一个字符串。
+Answer = True
+变量Answer是一个布尔值True。
 
 ### 列表(List)
 列表是Python中最基本的数据结构之一，它是一个有序的集合，可以随时添加和删除其中的元素。
